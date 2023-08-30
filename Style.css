@@ -1,0 +1,684 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 4vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* if you take 100% of height of the screen then the main content of the body will always be alligned in the center */
+  background-color: rgba(0, 0, 0, 1);
+  /* height: 70%; */
+  /* transform: rotate(90deg); */
+  /* transform-origin:bottom left; */
+  /* overflow: hidden; */
+}
+
+.piano-container {
+  position: absolute;
+}
+
+.piano {
+  height: 340px;
+  /* top left bottom right  */
+  padding: 16px 30px 40px 30px;
+  background-color: rgba(27, 27, 27, 1);
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 33vh;
+  box-shadow: -12px 12.6px 0px 11px rgb(135, 57, 249), 0px 0px 19px black;
+
+
+}
+
+.container {
+  background-color: rgb(22, 22, 22);
+  margin-top: 10px;
+  padding-bottom: 3px;
+  padding-top: 4px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.keys {
+  position: relative;
+}
+
+/* here the parent div is piano[gray-color] so the padding is set in it*/
+.black-keys {
+  position: relative;
+  display: flex;
+  margin-top: 2px;
+}
+
+.black-key {
+  width: 41px;
+  height: 160px;
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 3px solid rgba(27, 27, 27, 1);
+  background-color: rgb(135, 57, 249);
+  box-shadow: -4px 3px rgb(27, 10, 53);
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.black-key:active {
+  background-color: rgb(123, 42, 244);
+  box-shadow: none;
+}
+
+.white-keys {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  /* margin-left: 2px; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 4vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* if you take 100% of height of the screen then the main content of the body will always be alligned in the center */
+  background-color: rgba(0, 0, 0, 1);
+  /* height: 70%; */
+  /* transform: rotate(90deg); */
+  /* transform-origin:bottom left; */
+  /* overflow: hidden; */
+}
+
+.piano-container {
+  position: absolute;
+}
+
+.piano {
+  height: 340px;
+  /* top left bottom right  */
+  padding: 16px 30px 40px 30px;
+  background-color: rgba(27, 27, 27, 1);
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 33vh;
+  box-shadow: -12px 12.6px 0px 11px rgb(135, 57, 249), 0px 0px 19px black;
+
+
+}
+
+.container {
+  background-color: rgb(22, 22, 22);
+  margin-top: 10px;
+  padding-bottom: 3px;
+  padding-top: 4px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.keys {
+  position: relative;
+}
+
+/* here the parent div is piano[gray-color] so the padding is set in it*/
+.black-keys {
+  position: relative;
+  display: flex;
+  margin-top: 2px;
+}
+
+.black-key {
+  width: 41px;
+  height: 160px;
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 3px solid rgba(27, 27, 27, 1);
+  background-color: rgb(135, 57, 249);
+  box-shadow: -4px 3px rgb(27, 10, 53);
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.black-key:active {
+  background-color: rgb(123, 42, 244);
+  box-shadow: none;
+}
+
+.white-keys {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  /* margin-left: 2px; */
+}
+
+.white-key {
+  width: 68px;
+  height: 280px;
+  /* 280px */
+  border-radius: 0px 0px 10px 10px;
+  border: 2px solid rgba(27, 27, 27, 1);
+  box-sizing: border-box;
+  background-color: rgb(54, 54, 54);
+  margin-right: 1px;
+  box-shadow: -2px 2px 3px rgb(5, 5, 5);
+  padding-top: 228px;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
+.white-key:active {
+  background-color: rgb(251, 251, 251);
+  height: 276px;
+  box-shadow: none;
+}
+
+.white-key:active .note {
+  color: white;
+}
+
+/* this specified data was taken from the free-code-camp */
+.black-key:nth-child(1) {
+  left: 49px;
+}
+
+.black-key:nth-child(2) {
+  left: 118px;
+}
+
+.black-key:nth-child(3) {
+  left: 256px;
+}
+
+.black-key:nth-child(4) {
+  left: 324px;
+}
+
+.black-key:nth-child(5) {
+  left: 394px;
+}
+
+.black-key:nth-child(6) {
+  left: 530px;
+}
+
+.black-key:nth-child(7) {
+  left: 599px;
+}
+
+.black-key:nth-child(8) {
+  left: 670px;
+}
+
+.black-key:nth-child(9) {
+  left: 806px;
+}
+
+.black-key:nth-child(10) {
+  left: 877px;
+}
+
+.note {
+  color: rgb(119, 76, 185);
+  font-size: 26px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  user-select: none;
+}
+
+.play {
+  font-size: 17px;
+  padding: 5px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  background-color: rgb(230, 230, 230);
+  display: none;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  color: rgb(119, 76, 185);
+  font-size: 24px;
+  font-family: 'Manrope', sans-serif;
+  margin-right: 5px;
+  font-weight: 600;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.app-author {
+  color: rgba(72, 72, 72, 1);
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  margin-right: 56px;
+}
+
+.volume-declare {
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: -4px;
+}
+
+.volume-slider {
+  accent-color: rgb(255, 255, 255);
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, rgba(119, 76, 185, 1)50%, rgba(54, 54, 54, 1) 50%);
+  height: 5px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.back {
+  margin-top: 6.3vh;
+  /* 10vh */
+  margin-left: 0vw;
+}
+
+.back-text {
+  color: rgba(119, 76, 185, 1);
+  font-size: 190px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.back-text-1 {
+  color: rgba(119, 76, 185, 1);
+  font-size: 40px;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 2px;
+  margin-top: -20px;
+  /* display: none; */
+}
+
+.white-text {
+  color: #b7b1b1;
+  font-weight: 500;
+}
+
+
+.album {
+  height:50px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -5px;
+  margin-left: 80px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 10px;
+}
+
+.album-cover {
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+}
+
+.album-information {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  color: white;
+  margin-top: -12px;
+  margin-left: 10px;
+}
+
+.album-name {
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  color: rgba(119, 76, 185, 1);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.album-artist{
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  color: #b7b1b1;
+  font-weight: 500;
+  margin-top: -3px;
+  margin-left: 2px;
+}
+
+.album-play{
+  margin-left: 15px;
+  margin-top: 4px;
+  height: 45px;
+  filter: invert(39%) sepia(62%) saturate(875%) hue-rotate(227deg) brightness(79%) contrast(89%);
+  cursor: pointer;
+}
+
+.github{
+  margin-left: 72px;
+  margin-top: 0px;
+  height: 40px;
+  filter: invert(39%) sepia(62%) saturate(875%) hue-rotate(227deg) brightness(79%) contrast(89%);
+}
+
+
+/* Animations */
+.back-text{
+  /* position: relative; */
+  animation-name: back-text-animation ;
+  animation-duration: 4s;
+  animation-fill-mode: forward;
+  animation-timing-function: ease-in;
+}
+
+@keyframes back-text-animation {
+  from{
+      opacity: 10%;
+      word-spacing: 30px;
+  }
+  to{
+      opacity: 100%;
+      word-spacing: 0px;
+  }
+}
+.piano-container{
+  animation-name: piano-animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes piano-animation {
+  from{
+      margin-top: 7vh;
+      opacity: 100%;
+  }
+  to{
+      margin-top: -5vh;
+      opacity: 100%;
+  }
+}
+.back-text-1{
+  position: absolute;
+  animation-name: back-text-1-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes back-text-1-animation{
+  from{
+      opacity: 40%;
+  }
+  to{
+      opacity: 100%;
+  }
+}
+
+
+
+.white-key {
+  width: 68px;
+  height: 280px;
+  /* 280px */
+  border-radius: 0px 0px 10px 10px;
+  border: 2px solid rgba(27, 27, 27, 1);
+  box-sizing: border-box;
+  background-color: rgb(54, 54, 54);
+  margin-right: 1px;
+  box-shadow: -2px 2px 3px rgb(5, 5, 5);
+  padding-top: 228px;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
+.white-key:active {
+  background-color: rgb(251, 251, 251);
+  height: 276px;
+  box-shadow: none;
+}
+
+.white-key:active .note {
+  color: white;
+}
+
+/* this specified data was taken from the free-code-camp */
+.black-key:nth-child(1) {
+  left: 49px;
+}
+
+.black-key:nth-child(2) {
+  left: 118px;
+}
+
+.black-key:nth-child(3) {
+  left: 256px;
+}
+
+.black-key:nth-child(4) {
+  left: 324px;
+}
+
+.black-key:nth-child(5) {
+  left: 394px;
+}
+
+.black-key:nth-child(6) {
+  left: 530px;
+}
+
+.black-key:nth-child(7) {
+  left: 599px;
+}
+
+.black-key:nth-child(8) {
+  left: 670px;
+}
+
+.black-key:nth-child(9) {
+  left: 806px;
+}
+
+.black-key:nth-child(10) {
+  left: 877px;
+}
+
+.note {
+  color: rgb(119, 76, 185);
+  font-size: 26px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  user-select: none;
+}
+
+.play {
+  font-size: 17px;
+  padding: 5px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  background-color: rgb(230, 230, 230);
+  display: none;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  color: rgb(119, 76, 185);
+  font-size: 24px;
+  font-family: 'Manrope', sans-serif;
+  margin-right: 5px;
+  font-weight: 600;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.app-author {
+  color: rgba(72, 72, 72, 1);
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  margin-right: 56px;
+}
+
+.volume-declare {
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: -4px;
+}
+
+.volume-slider {
+  accent-color: rgb(255, 255, 255);
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, rgba(119, 76, 185, 1)50%, rgba(54, 54, 54, 1) 50%);
+  height: 5px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.back {
+  margin-top: 6.3vh;
+  /* 10vh */
+  margin-left: 0vw;
+}
+
+.back-text {
+  color: rgba(119, 76, 185, 1);
+  font-size: 190px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.back-text-1 {
+  color: rgba(119, 76, 185, 1);
+  font-size: 40px;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 2px;
+  margin-top: -20px;
+  /* display: none; */
+}
+
+.white-text {
+  color: #b7b1b1;
+  font-weight: 500;
+}
+
+
+.album {
+  height:50px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -5px;
+  margin-left: 80px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 10px;
+}
+
+.album-cover {
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+}
+
+.album-information {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  color: white;
+  margin-top: -12px;
+  margin-left: 10px;
+}
+
+.album-name {
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  color: rgba(119, 76, 185, 1);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.album-artist{
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  color: #b7b1b1;
+  font-weight: 500;
+  margin-top: -3px;
+  margin-left: 2px;
+}
+
+.album-play{
+  margin-left: 15px;
+  margin-top: 4px;
+  height: 45px;
+  filter: invert(39%) sepia(62%) saturate(875%) hue-rotate(227deg) brightness(79%) contrast(89%);
+  cursor: pointer;
+}
+
+.github{
+  margin-left: 72px;
+  margin-top: 0px;
+  height: 40px;
+  filter: invert(39%) sepia(62%) saturate(875%) hue-rotate(227deg) brightness(79%) contrast(89%);
+}
+
+
+/* Animations */
+.back-text{
+  /* position: relative; */
+  animation-name: back-text-animation ;
+  animation-duration: 4s;
+  animation-fill-mode: forward;
+  animation-timing-function: ease-in;
+}
+
+@keyframes back-text-animation {
+  from{
+      opacity: 10%;
+      word-spacing: 30px;
+  }
+  to{
+      opacity: 100%;
+      word-spacing: 0px;
+  }
+}
+.piano-container{
+  animation-name: piano-animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes piano-animation {
+  from{
+      margin-top: 7vh;
+      opacity: 100%;
+  }
+  to{
+      margin-top: -5vh;
+      opacity: 100%;
+  }
+}
+.back-text-1{
+  position: absolute;
+  animation-name: back-text-1-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes back-text-1-animation{
+  from{
+      opacity: 40%;
+  }
+  to{
+      opacity: 100%;
+  }
+}
+
+
